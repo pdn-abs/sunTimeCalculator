@@ -1,9 +1,11 @@
 import { React } from 'react';
 import './App.scss';
+import TimeList from './components/TimeList';
 
-const App = () =>
+const App = (context) =>
 	<div className="App">
-		Ready to start.
+
+		<TimeList { ...context }/>
 	</div>;
 
 export default App;
