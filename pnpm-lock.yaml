@@ -13,6 +13,7 @@ specifiers:
   react-dom: ^17.0.2
   react-scripts: ^5.0.1
   sass: ^1.54.5
+  suncalc: ^1.9.0
   web-vitals: ^1.1.2
 
 dependencies:
@@ -21,6 +22,7 @@ dependencies:
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
   react-scripts: 5.0.1_bpin7wgvdtduimxovqvn44auwq
+  suncalc: 1.9.0
   web-vitals: 1.1.2
 
 devDependencies:
@@ -10041,6 +10043,10 @@ packages:
       mz: 2.7.0
       pirates: 4.0.6
       ts-interface-checker: 0.1.13
+    dev: false
+
+  /suncalc/1.9.0:
+    resolution: {integrity: sha512-vMJ8Byp1uIPoj+wb9c1AdK4jpkSKVAywgHX0lqY7zt6+EWRRC3Z+0Ucfjy/0yxTVO1hwwchZe4uoFNqrIC24+A==}
     dev: false
 
   /supports-color/5.5.0:
