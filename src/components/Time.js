@@ -1,9 +1,7 @@
 import { React } from 'react';
-import TimeListManager from '../services/TimeListManager';
 
 const Time = (context) => {
-	const { data: { time, id }} = context;
-	const timeList = TimeListManager.getTimeList();
+	const { state: { timeList }, data: { time, id }} = context;
 	const value = timeList[time].toString();
 
 	return (

@@ -1,9 +1,8 @@
 import SunCalc from 'suncalc';
 
 const TimeListManager = {
-	getTimeList: () => {
-		const latitude = 13.0827;
-		const longitude = 80.2707;
+	getTimeList: (context) => {
+		const { state: { latitude, longitude }} = context;
 
 		return	(
 			SunCalc.getTimes(
