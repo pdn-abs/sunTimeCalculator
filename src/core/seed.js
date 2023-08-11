@@ -4,12 +4,8 @@
 const seed = {
 	latitude: 0,
 	longitude: 0,
-	timeList: {
-		sunrise: '',
-		sunriseEnd: '',
-		sunsetStart: '',
-		sunset: '',
-	},
+	timeList: [],
+	sunTimesOfPlaces: [],
 };
 
 export default seed;

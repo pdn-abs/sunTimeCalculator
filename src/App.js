@@ -1,16 +1,15 @@
-import { React } from 'react';
+import { React, useEffect } from 'react';
 import './App.scss';
-import LatitudeInput from './components/LatitudeInput';
-import LongitudeInput from './components/LongitudeInput';
-import CalculateButton from './components/CalculateButton';
-import TimeList from './components/TimeList';
+import SunTimeTable from './components/SunTimeTable';
 
-const App = (context) =>
-	<div className="App">
-		<LatitudeInput { ...context }/>
-		<LongitudeInput { ...context }/>
-		<CalculateButton { ...context }/>
-		<TimeList { ...context }/>
+const App = (context) => {
+	const { actions } = context;
+
+	useEffect(() => actions.setSunTimesOfPlaces(context), []);
+
+	return <div className="App">
+		<SunTimeTable { ...context }/>
 	</div>;
+};
 
 export default App;

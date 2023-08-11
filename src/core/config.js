@@ -1,6 +1,6 @@
 
 const config = {
-	data: [
+	locationData: [
 		{ place: 'Madurai',
 			latitude: 9.932368732180194,
 			longitude: 78.1238481209068 },
@@ -11,7 +11,7 @@ const config = {
 			latitude: 13.069484391471253,
 			longitude: 80.31012742581258 },
 	],
-	timeNameList: ['sunrise', 'sunriseEnd', 'sunsetStart', 'sunset'],
+	timeNameList: ['sunrise', 'sunset'],
 };
 
 export default config;
