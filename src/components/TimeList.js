@@ -1,12 +1,12 @@
 import { React } from 'react';
-import { map } from '@laufire/utils/collection';
+import { map, values } from '@laufire/utils/collection';
 import Time from './Time';
 
 const TimeList = (context) => {
-	const { config: { timeNameList }} = context;
+	const { state: { timeList }} = context;
 
 	return <div>
-		{map(timeNameList, (time, id) =>
+		{map(values(timeList), (time, id) =>
 			<Time { ...{ ...context, data: { time, id }} }/>)}
 	</div>;
 };

@@ -1,4 +1,3 @@
-import { peek } from '@laufire/utils/debug';
 import SunCalc from 'suncalc';
 
 const TimeListManager = {
@@ -6,7 +5,7 @@ const TimeListManager = {
 		const { state: { latitude, longitude }} = context;
 
 		return	TimeListManager.getCalculatedSunTimes({
-			...context, latitude, longitude,
+			...context, data: { latitude, longitude },
 		});
 	},
 	getCalculatedSunTimes: (context) => {
@@ -22,7 +21,6 @@ const TimeListManager = {
 			[curValue]: sunTimes[curValue].toString().substr(16, 9),
 		}), {});
 
-		peek({ timeList });
 		return timeList;
 	},
 	getSunTimesOfPlaces: (context) => {
